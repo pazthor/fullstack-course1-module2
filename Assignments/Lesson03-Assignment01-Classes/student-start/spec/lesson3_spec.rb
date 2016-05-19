@@ -12,19 +12,19 @@ describe "lesson3" do
 
     it "unexpected search result" do
       expect(Person.search("Trump").size).to be == 3
-    end 
+    end
   end
 
   context "check instance properties" do
     subject(:john) { Person.new("Chris", "Christie") }
 
     it "missing first_name" do
-      is_expected.to respond_to(:first_name) 
-    end 
+      is_expected.to respond_to(:first_name)
+    end
 
     it "missing last_name" do
-      is_expected.to respond_to(:last_name) 
-    end 
+      is_expected.to respond_to(:last_name)
+    end
 
   end
 
@@ -32,7 +32,7 @@ describe "lesson3" do
     subject(:class) { Person }
 
     it "missing search" do
-      is_expected.to respond_to(:search) 
-    end 
+      is_expected.to respond_to(:search)
+    end
   end
 end
